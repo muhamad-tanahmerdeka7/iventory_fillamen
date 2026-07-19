@@ -5,11 +5,12 @@
 
 /* SAP Fiori Tile Styling */
 .fiori-tile {
-    background-color: #ffffff;
-    border-radius: 0.25rem !important; /* Sudut lebih tajam ala SAP */
+    /* Gunakan kelas warna dari Tailwind agar otomatis berubah di dark mode */
+    @apply bg-white dark:bg-gray-800; 
+    border-radius: 0.25rem !important;
     box-shadow: 0 0 0.125rem 0 rgba(0,0,0,0.1), 0 0.25rem 0.5rem 0 rgba(0,0,0,0.1) !important;
     transition: transform 0.2s, box-shadow 0.2s;
-    border-top: 4px solid #0A6ED1; /* Aksen garis atas SAP Blue */
+    border-top: 4px solid #0A6ED1;
 }
 
 .fiori-tile:hover {
@@ -18,7 +19,8 @@
     cursor: pointer;
 }
 
-/* Mengubah warna background dashboard agar abu-abu khas SAP Launchpad */
+/* Mengubah warna background dashboard */
 .fi-main {
-    background-color: #F4F4F5 !important; 
+    /* Menggunakan variabel warna dari Filament (Gray 50/100 untuk terang, 900/950 untuk gelap) */
+    @apply bg-gray-50 dark:bg-gray-950;
 }
