@@ -1,0 +1,24 @@
+@import '../../../../vendor/filament/filament/resources/css/theme.css';
+
+@source '../../../../app/Filament/**/*';
+@source '../../../../resources/views/filament/**/*';
+
+/* SAP Fiori Tile Styling */
+.fiori-tile {
+    background-color: #ffffff;
+    border-radius: 0.25rem !important; /* Sudut lebih tajam ala SAP */
+    box-shadow: 0 0 0.125rem 0 rgba(0,0,0,0.1), 0 0.25rem 0.5rem 0 rgba(0,0,0,0.1) !important;
+    transition: transform 0.2s, box-shadow 0.2s;
+    border-top: 4px solid #0A6ED1; /* Aksen garis atas SAP Blue */
+}
+
+.fiori-tile:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 0.25rem 0.5rem 0 rgba(0,0,0,0.15), 0 0.5rem 1rem 0 rgba(0,0,0,0.15) !important;
+    cursor: pointer;
+}
+
+/* Mengubah warna background dashboard agar abu-abu khas SAP Launchpad */
+.fi-main {
+    background-color: #F4F4F5 !important; 
+}
